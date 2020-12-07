@@ -26,281 +26,61 @@ struct Keyboard_
 
   Keyboard_()
     : header()
-    , K_KP_MINUS(0)
-    , K_F1(0)
-    , K_F2(0)
-    , K_F3(0)
-    , K_COLON(0)
-    , K_F5(0)
-    , K_F6(0)
-    , K_F7(0)
-    , K_F8(0)
-    , K_F9(0)
-    , K_LEFT(0)
-    , K_COMMA(0)
-    , K_RIGHT(0)
-    , K_PAUSE(0)
-    , K_EQUALS(0)
-    , K_SYSREQ(0)
-    , K_F4(0)
-    , K_SEMICOLON(0)
-    , K_AMPERSAND(0)
-    , K_NUMLOCK(0)
-    , K_CLEAR(0)
-    , K_UNKNOWN(0)
-    , K_KP_PLUS(0)
-    , K_QUESTION(0)
-    , K_KP_EQUALS(0)
-    , K_RMETA(0)
-    , K_EURO(0)
-    , K_SCROLLOCK(0)
-    , K_PERIOD(0)
-    , K_SPACE(0)
-    , K_INSERT(0)
-    , K_DELETE(0)
-    , K_CARET(0)
-    , K_HOME(0)
     , K_i(0)
-    , K_LSUPER(0)
-    , K_GREATER(0)
-    , K_LMETA(0)
-    , K_TAB(0)
-    , K_FIRST(0)
-    , K_KP_PERIOD(0)
-    , K_RALT(0)
-    , K_BREAK(0)
-    , K_MODE(0)
     , K_h(0)
-    , K_RIGHTBRACKET(0)
-    , K_RSHIFT(0)
-    , K_LSHIFT(0)
-    , K_F12(0)
-    , K_F13(0)
-    , K_F10(0)
-    , K_F11(0)
-    , K_LAST(0)
-    , K_F14(0)
-    , K_F15(0)
     , K_y(0)
-    , K_DOLLAR(0)
     , K_z(0)
-    , K_KP_ENTER(0)
-    , K_PAGEDOWN(0)
     , K_q(0)
     , K_p(0)
     , K_s(0)
     , K_n(0)
-    , K_HASH(0)
     , K_t(0)
     , K_w(0)
     , K_v(0)
-    , K_DOWN(0)
     , K_a(0)
     , K_k(0)
     , K_j(0)
     , K_m(0)
     , K_l(0)
     , K_o(0)
-    , K_UP(0)
-    , K_END(0)
-    , K_RSUPER(0)
     , K_c(0)
     , K_b(0)
     , K_e(0)
     , K_d(0)
     , K_g(0)
     , K_f(0)
-    , K_ASTERISK(0)
-    , K_AT(0)
-    , K_PAGEUP(0)
-    , K_CAPSLOCK(0)
-    , K_LESS(0)
-    , K_PRINT(0)
-    , K_SLASH(0)
-    , K_LCTRL(0)
-    , K_BACKSLASH(0)
-    , K_RETURN(0)
-    , K_MINUS(0)
-    , K_HELP(0)
     , K_r(0)
-    , K_9(0)
-    , K_8(0)
-    , K_EXCLAIM(0)
     , K_x(0)
-    , K_1(0)
-    , K_0(0)
-    , K_3(0)
-    , K_2(0)
-    , K_5(0)
-    , K_4(0)
-    , K_7(0)
-    , K_6(0)
-    , K_LEFTPAREN(0)
-    , K_KP_DIVIDE(0)
-    , K_POWER(0)
-    , K_ESCAPE(0)
-    , K_BACKSPACE(0)
-    , K_MENU(0)
-    , K_u(0)
-    , K_PLUS(0)
-    , K_KP6(0)
-    , K_UNDERSCORE(0)
-    , K_QUOTE(0)
-    , K_RIGHTPAREN(0)
-    , K_RCTRL(0)
-    , K_QUOTEDBL(0)
-    , K_KP_MULTIPLY(0)
-    , K_LEFTBRACKET(0)
-    , K_LALT(0)
-    , K_KP8(0)
-    , K_KP9(0)
-    , K_KP4(0)
-    , K_KP5(0)
-    , K_BACKQUOTE(0)
-    , K_KP7(0)
-    , K_KP0(0)
-    , K_KP1(0)
-    , K_KP2(0)
-    , K_KP3(0)  {
+    , K_u(0)  {
     }
   Keyboard_(const ContainerAllocator& _alloc)
     : header(_alloc)
-    , K_KP_MINUS(0)
-    , K_F1(0)
-    , K_F2(0)
-    , K_F3(0)
-    , K_COLON(0)
-    , K_F5(0)
-    , K_F6(0)
-    , K_F7(0)
-    , K_F8(0)
-    , K_F9(0)
-    , K_LEFT(0)
-    , K_COMMA(0)
-    , K_RIGHT(0)
-    , K_PAUSE(0)
-    , K_EQUALS(0)
-    , K_SYSREQ(0)
-    , K_F4(0)
-    , K_SEMICOLON(0)
-    , K_AMPERSAND(0)
-    , K_NUMLOCK(0)
-    , K_CLEAR(0)
-    , K_UNKNOWN(0)
-    , K_KP_PLUS(0)
-    , K_QUESTION(0)
-    , K_KP_EQUALS(0)
-    , K_RMETA(0)
-    , K_EURO(0)
-    , K_SCROLLOCK(0)
-    , K_PERIOD(0)
-    , K_SPACE(0)
-    , K_INSERT(0)
-    , K_DELETE(0)
-    , K_CARET(0)
-    , K_HOME(0)
     , K_i(0)
-    , K_LSUPER(0)
-    , K_GREATER(0)
-    , K_LMETA(0)
-    , K_TAB(0)
-    , K_FIRST(0)
-    , K_KP_PERIOD(0)
-    , K_RALT(0)
-    , K_BREAK(0)
-    , K_MODE(0)
     , K_h(0)
-    , K_RIGHTBRACKET(0)
-    , K_RSHIFT(0)
-    , K_LSHIFT(0)
-    , K_F12(0)
-    , K_F13(0)
-    , K_F10(0)
-    , K_F11(0)
-    , K_LAST(0)
-    , K_F14(0)
-    , K_F15(0)
     , K_y(0)
-    , K_DOLLAR(0)
     , K_z(0)
-    , K_KP_ENTER(0)
-    , K_PAGEDOWN(0)
     , K_q(0)
     , K_p(0)
     , K_s(0)
     , K_n(0)
-    , K_HASH(0)
     , K_t(0)
     , K_w(0)
     , K_v(0)
-    , K_DOWN(0)
     , K_a(0)
     , K_k(0)
     , K_j(0)
     , K_m(0)
     , K_l(0)
     , K_o(0)
-    , K_UP(0)
-    , K_END(0)
-    , K_RSUPER(0)
     , K_c(0)
     , K_b(0)
     , K_e(0)
     , K_d(0)
     , K_g(0)
     , K_f(0)
-    , K_ASTERISK(0)
-    , K_AT(0)
-    , K_PAGEUP(0)
-    , K_CAPSLOCK(0)
-    , K_LESS(0)
-    , K_PRINT(0)
-    , K_SLASH(0)
-    , K_LCTRL(0)
-    , K_BACKSLASH(0)
-    , K_RETURN(0)
-    , K_MINUS(0)
-    , K_HELP(0)
     , K_r(0)
-    , K_9(0)
-    , K_8(0)
-    , K_EXCLAIM(0)
     , K_x(0)
-    , K_1(0)
-    , K_0(0)
-    , K_3(0)
-    , K_2(0)
-    , K_5(0)
-    , K_4(0)
-    , K_7(0)
-    , K_6(0)
-    , K_LEFTPAREN(0)
-    , K_KP_DIVIDE(0)
-    , K_POWER(0)
-    , K_ESCAPE(0)
-    , K_BACKSPACE(0)
-    , K_MENU(0)
-    , K_u(0)
-    , K_PLUS(0)
-    , K_KP6(0)
-    , K_UNDERSCORE(0)
-    , K_QUOTE(0)
-    , K_RIGHTPAREN(0)
-    , K_RCTRL(0)
-    , K_QUOTEDBL(0)
-    , K_KP_MULTIPLY(0)
-    , K_LEFTBRACKET(0)
-    , K_LALT(0)
-    , K_KP8(0)
-    , K_KP9(0)
-    , K_KP4(0)
-    , K_KP5(0)
-    , K_BACKQUOTE(0)
-    , K_KP7(0)
-    , K_KP0(0)
-    , K_KP1(0)
-    , K_KP2(0)
-    , K_KP3(0)  {
+    , K_u(0)  {
   (void)_alloc;
     }
 
@@ -309,185 +89,17 @@ struct Keyboard_
    typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
   _header_type header;
 
-   typedef uint8_t _K_KP_MINUS_type;
-  _K_KP_MINUS_type K_KP_MINUS;
-
-   typedef uint8_t _K_F1_type;
-  _K_F1_type K_F1;
-
-   typedef uint8_t _K_F2_type;
-  _K_F2_type K_F2;
-
-   typedef uint8_t _K_F3_type;
-  _K_F3_type K_F3;
-
-   typedef uint8_t _K_COLON_type;
-  _K_COLON_type K_COLON;
-
-   typedef uint8_t _K_F5_type;
-  _K_F5_type K_F5;
-
-   typedef uint8_t _K_F6_type;
-  _K_F6_type K_F6;
-
-   typedef uint8_t _K_F7_type;
-  _K_F7_type K_F7;
-
-   typedef uint8_t _K_F8_type;
-  _K_F8_type K_F8;
-
-   typedef uint8_t _K_F9_type;
-  _K_F9_type K_F9;
-
-   typedef uint8_t _K_LEFT_type;
-  _K_LEFT_type K_LEFT;
-
-   typedef uint8_t _K_COMMA_type;
-  _K_COMMA_type K_COMMA;
-
-   typedef uint8_t _K_RIGHT_type;
-  _K_RIGHT_type K_RIGHT;
-
-   typedef uint8_t _K_PAUSE_type;
-  _K_PAUSE_type K_PAUSE;
-
-   typedef uint8_t _K_EQUALS_type;
-  _K_EQUALS_type K_EQUALS;
-
-   typedef uint8_t _K_SYSREQ_type;
-  _K_SYSREQ_type K_SYSREQ;
-
-   typedef uint8_t _K_F4_type;
-  _K_F4_type K_F4;
-
-   typedef uint8_t _K_SEMICOLON_type;
-  _K_SEMICOLON_type K_SEMICOLON;
-
-   typedef uint8_t _K_AMPERSAND_type;
-  _K_AMPERSAND_type K_AMPERSAND;
-
-   typedef uint8_t _K_NUMLOCK_type;
-  _K_NUMLOCK_type K_NUMLOCK;
-
-   typedef uint8_t _K_CLEAR_type;
-  _K_CLEAR_type K_CLEAR;
-
-   typedef uint8_t _K_UNKNOWN_type;
-  _K_UNKNOWN_type K_UNKNOWN;
-
-   typedef uint8_t _K_KP_PLUS_type;
-  _K_KP_PLUS_type K_KP_PLUS;
-
-   typedef uint8_t _K_QUESTION_type;
-  _K_QUESTION_type K_QUESTION;
-
-   typedef uint8_t _K_KP_EQUALS_type;
-  _K_KP_EQUALS_type K_KP_EQUALS;
-
-   typedef uint8_t _K_RMETA_type;
-  _K_RMETA_type K_RMETA;
-
-   typedef uint8_t _K_EURO_type;
-  _K_EURO_type K_EURO;
-
-   typedef uint8_t _K_SCROLLOCK_type;
-  _K_SCROLLOCK_type K_SCROLLOCK;
-
-   typedef uint8_t _K_PERIOD_type;
-  _K_PERIOD_type K_PERIOD;
-
-   typedef uint8_t _K_SPACE_type;
-  _K_SPACE_type K_SPACE;
-
-   typedef uint8_t _K_INSERT_type;
-  _K_INSERT_type K_INSERT;
-
-   typedef uint8_t _K_DELETE_type;
-  _K_DELETE_type K_DELETE;
-
-   typedef uint8_t _K_CARET_type;
-  _K_CARET_type K_CARET;
-
-   typedef uint8_t _K_HOME_type;
-  _K_HOME_type K_HOME;
-
    typedef uint8_t _K_i_type;
   _K_i_type K_i;
-
-   typedef uint8_t _K_LSUPER_type;
-  _K_LSUPER_type K_LSUPER;
-
-   typedef uint8_t _K_GREATER_type;
-  _K_GREATER_type K_GREATER;
-
-   typedef uint8_t _K_LMETA_type;
-  _K_LMETA_type K_LMETA;
-
-   typedef uint8_t _K_TAB_type;
-  _K_TAB_type K_TAB;
-
-   typedef uint8_t _K_FIRST_type;
-  _K_FIRST_type K_FIRST;
-
-   typedef uint8_t _K_KP_PERIOD_type;
-  _K_KP_PERIOD_type K_KP_PERIOD;
-
-   typedef uint8_t _K_RALT_type;
-  _K_RALT_type K_RALT;
-
-   typedef uint8_t _K_BREAK_type;
-  _K_BREAK_type K_BREAK;
-
-   typedef uint8_t _K_MODE_type;
-  _K_MODE_type K_MODE;
 
    typedef uint8_t _K_h_type;
   _K_h_type K_h;
 
-   typedef uint8_t _K_RIGHTBRACKET_type;
-  _K_RIGHTBRACKET_type K_RIGHTBRACKET;
-
-   typedef uint8_t _K_RSHIFT_type;
-  _K_RSHIFT_type K_RSHIFT;
-
-   typedef uint8_t _K_LSHIFT_type;
-  _K_LSHIFT_type K_LSHIFT;
-
-   typedef uint8_t _K_F12_type;
-  _K_F12_type K_F12;
-
-   typedef uint8_t _K_F13_type;
-  _K_F13_type K_F13;
-
-   typedef uint8_t _K_F10_type;
-  _K_F10_type K_F10;
-
-   typedef uint8_t _K_F11_type;
-  _K_F11_type K_F11;
-
-   typedef uint8_t _K_LAST_type;
-  _K_LAST_type K_LAST;
-
-   typedef uint8_t _K_F14_type;
-  _K_F14_type K_F14;
-
-   typedef uint8_t _K_F15_type;
-  _K_F15_type K_F15;
-
    typedef uint8_t _K_y_type;
   _K_y_type K_y;
 
-   typedef uint8_t _K_DOLLAR_type;
-  _K_DOLLAR_type K_DOLLAR;
-
    typedef uint8_t _K_z_type;
   _K_z_type K_z;
-
-   typedef uint8_t _K_KP_ENTER_type;
-  _K_KP_ENTER_type K_KP_ENTER;
-
-   typedef uint8_t _K_PAGEDOWN_type;
-  _K_PAGEDOWN_type K_PAGEDOWN;
 
    typedef uint8_t _K_q_type;
   _K_q_type K_q;
@@ -501,9 +113,6 @@ struct Keyboard_
    typedef uint8_t _K_n_type;
   _K_n_type K_n;
 
-   typedef uint8_t _K_HASH_type;
-  _K_HASH_type K_HASH;
-
    typedef uint8_t _K_t_type;
   _K_t_type K_t;
 
@@ -512,9 +121,6 @@ struct Keyboard_
 
    typedef uint8_t _K_v_type;
   _K_v_type K_v;
-
-   typedef uint8_t _K_DOWN_type;
-  _K_DOWN_type K_DOWN;
 
    typedef uint8_t _K_a_type;
   _K_a_type K_a;
@@ -534,15 +140,6 @@ struct Keyboard_
    typedef uint8_t _K_o_type;
   _K_o_type K_o;
 
-   typedef uint8_t _K_UP_type;
-  _K_UP_type K_UP;
-
-   typedef uint8_t _K_END_type;
-  _K_END_type K_END;
-
-   typedef uint8_t _K_RSUPER_type;
-  _K_RSUPER_type K_RSUPER;
-
    typedef uint8_t _K_c_type;
   _K_c_type K_c;
 
@@ -561,161 +158,14 @@ struct Keyboard_
    typedef uint8_t _K_f_type;
   _K_f_type K_f;
 
-   typedef uint8_t _K_ASTERISK_type;
-  _K_ASTERISK_type K_ASTERISK;
-
-   typedef uint8_t _K_AT_type;
-  _K_AT_type K_AT;
-
-   typedef uint8_t _K_PAGEUP_type;
-  _K_PAGEUP_type K_PAGEUP;
-
-   typedef uint8_t _K_CAPSLOCK_type;
-  _K_CAPSLOCK_type K_CAPSLOCK;
-
-   typedef uint8_t _K_LESS_type;
-  _K_LESS_type K_LESS;
-
-   typedef uint8_t _K_PRINT_type;
-  _K_PRINT_type K_PRINT;
-
-   typedef uint8_t _K_SLASH_type;
-  _K_SLASH_type K_SLASH;
-
-   typedef uint8_t _K_LCTRL_type;
-  _K_LCTRL_type K_LCTRL;
-
-   typedef uint8_t _K_BACKSLASH_type;
-  _K_BACKSLASH_type K_BACKSLASH;
-
-   typedef uint8_t _K_RETURN_type;
-  _K_RETURN_type K_RETURN;
-
-   typedef uint8_t _K_MINUS_type;
-  _K_MINUS_type K_MINUS;
-
-   typedef uint8_t _K_HELP_type;
-  _K_HELP_type K_HELP;
-
    typedef uint8_t _K_r_type;
   _K_r_type K_r;
-
-   typedef uint8_t _K_9_type;
-  _K_9_type K_9;
-
-   typedef uint8_t _K_8_type;
-  _K_8_type K_8;
-
-   typedef uint8_t _K_EXCLAIM_type;
-  _K_EXCLAIM_type K_EXCLAIM;
 
    typedef uint8_t _K_x_type;
   _K_x_type K_x;
 
-   typedef uint8_t _K_1_type;
-  _K_1_type K_1;
-
-   typedef uint8_t _K_0_type;
-  _K_0_type K_0;
-
-   typedef uint8_t _K_3_type;
-  _K_3_type K_3;
-
-   typedef uint8_t _K_2_type;
-  _K_2_type K_2;
-
-   typedef uint8_t _K_5_type;
-  _K_5_type K_5;
-
-   typedef uint8_t _K_4_type;
-  _K_4_type K_4;
-
-   typedef uint8_t _K_7_type;
-  _K_7_type K_7;
-
-   typedef uint8_t _K_6_type;
-  _K_6_type K_6;
-
-   typedef uint8_t _K_LEFTPAREN_type;
-  _K_LEFTPAREN_type K_LEFTPAREN;
-
-   typedef uint8_t _K_KP_DIVIDE_type;
-  _K_KP_DIVIDE_type K_KP_DIVIDE;
-
-   typedef uint8_t _K_POWER_type;
-  _K_POWER_type K_POWER;
-
-   typedef uint8_t _K_ESCAPE_type;
-  _K_ESCAPE_type K_ESCAPE;
-
-   typedef uint8_t _K_BACKSPACE_type;
-  _K_BACKSPACE_type K_BACKSPACE;
-
-   typedef uint8_t _K_MENU_type;
-  _K_MENU_type K_MENU;
-
    typedef uint8_t _K_u_type;
   _K_u_type K_u;
-
-   typedef uint8_t _K_PLUS_type;
-  _K_PLUS_type K_PLUS;
-
-   typedef uint8_t _K_KP6_type;
-  _K_KP6_type K_KP6;
-
-   typedef uint8_t _K_UNDERSCORE_type;
-  _K_UNDERSCORE_type K_UNDERSCORE;
-
-   typedef uint8_t _K_QUOTE_type;
-  _K_QUOTE_type K_QUOTE;
-
-   typedef uint8_t _K_RIGHTPAREN_type;
-  _K_RIGHTPAREN_type K_RIGHTPAREN;
-
-   typedef uint8_t _K_RCTRL_type;
-  _K_RCTRL_type K_RCTRL;
-
-   typedef uint8_t _K_QUOTEDBL_type;
-  _K_QUOTEDBL_type K_QUOTEDBL;
-
-   typedef uint8_t _K_KP_MULTIPLY_type;
-  _K_KP_MULTIPLY_type K_KP_MULTIPLY;
-
-   typedef uint8_t _K_LEFTBRACKET_type;
-  _K_LEFTBRACKET_type K_LEFTBRACKET;
-
-   typedef uint8_t _K_LALT_type;
-  _K_LALT_type K_LALT;
-
-   typedef uint8_t _K_KP8_type;
-  _K_KP8_type K_KP8;
-
-   typedef uint8_t _K_KP9_type;
-  _K_KP9_type K_KP9;
-
-   typedef uint8_t _K_KP4_type;
-  _K_KP4_type K_KP4;
-
-   typedef uint8_t _K_KP5_type;
-  _K_KP5_type K_KP5;
-
-   typedef uint8_t _K_BACKQUOTE_type;
-  _K_BACKQUOTE_type K_BACKQUOTE;
-
-   typedef uint8_t _K_KP7_type;
-  _K_KP7_type K_KP7;
-
-   typedef uint8_t _K_KP0_type;
-  _K_KP0_type K_KP0;
-
-   typedef uint8_t _K_KP1_type;
-  _K_KP1_type K_KP1;
-
-   typedef uint8_t _K_KP2_type;
-  _K_KP2_type K_KP2;
-
-   typedef uint8_t _K_KP3_type;
-  _K_KP3_type K_KP3;
 
 
 
@@ -747,142 +197,32 @@ template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::keyboard::Keyboard_<ContainerAllocator1> & lhs, const ::keyboard::Keyboard_<ContainerAllocator2> & rhs)
 {
   return lhs.header == rhs.header &&
-    lhs.K_KP_MINUS == rhs.K_KP_MINUS &&
-    lhs.K_F1 == rhs.K_F1 &&
-    lhs.K_F2 == rhs.K_F2 &&
-    lhs.K_F3 == rhs.K_F3 &&
-    lhs.K_COLON == rhs.K_COLON &&
-    lhs.K_F5 == rhs.K_F5 &&
-    lhs.K_F6 == rhs.K_F6 &&
-    lhs.K_F7 == rhs.K_F7 &&
-    lhs.K_F8 == rhs.K_F8 &&
-    lhs.K_F9 == rhs.K_F9 &&
-    lhs.K_LEFT == rhs.K_LEFT &&
-    lhs.K_COMMA == rhs.K_COMMA &&
-    lhs.K_RIGHT == rhs.K_RIGHT &&
-    lhs.K_PAUSE == rhs.K_PAUSE &&
-    lhs.K_EQUALS == rhs.K_EQUALS &&
-    lhs.K_SYSREQ == rhs.K_SYSREQ &&
-    lhs.K_F4 == rhs.K_F4 &&
-    lhs.K_SEMICOLON == rhs.K_SEMICOLON &&
-    lhs.K_AMPERSAND == rhs.K_AMPERSAND &&
-    lhs.K_NUMLOCK == rhs.K_NUMLOCK &&
-    lhs.K_CLEAR == rhs.K_CLEAR &&
-    lhs.K_UNKNOWN == rhs.K_UNKNOWN &&
-    lhs.K_KP_PLUS == rhs.K_KP_PLUS &&
-    lhs.K_QUESTION == rhs.K_QUESTION &&
-    lhs.K_KP_EQUALS == rhs.K_KP_EQUALS &&
-    lhs.K_RMETA == rhs.K_RMETA &&
-    lhs.K_EURO == rhs.K_EURO &&
-    lhs.K_SCROLLOCK == rhs.K_SCROLLOCK &&
-    lhs.K_PERIOD == rhs.K_PERIOD &&
-    lhs.K_SPACE == rhs.K_SPACE &&
-    lhs.K_INSERT == rhs.K_INSERT &&
-    lhs.K_DELETE == rhs.K_DELETE &&
-    lhs.K_CARET == rhs.K_CARET &&
-    lhs.K_HOME == rhs.K_HOME &&
     lhs.K_i == rhs.K_i &&
-    lhs.K_LSUPER == rhs.K_LSUPER &&
-    lhs.K_GREATER == rhs.K_GREATER &&
-    lhs.K_LMETA == rhs.K_LMETA &&
-    lhs.K_TAB == rhs.K_TAB &&
-    lhs.K_FIRST == rhs.K_FIRST &&
-    lhs.K_KP_PERIOD == rhs.K_KP_PERIOD &&
-    lhs.K_RALT == rhs.K_RALT &&
-    lhs.K_BREAK == rhs.K_BREAK &&
-    lhs.K_MODE == rhs.K_MODE &&
     lhs.K_h == rhs.K_h &&
-    lhs.K_RIGHTBRACKET == rhs.K_RIGHTBRACKET &&
-    lhs.K_RSHIFT == rhs.K_RSHIFT &&
-    lhs.K_LSHIFT == rhs.K_LSHIFT &&
-    lhs.K_F12 == rhs.K_F12 &&
-    lhs.K_F13 == rhs.K_F13 &&
-    lhs.K_F10 == rhs.K_F10 &&
-    lhs.K_F11 == rhs.K_F11 &&
-    lhs.K_LAST == rhs.K_LAST &&
-    lhs.K_F14 == rhs.K_F14 &&
-    lhs.K_F15 == rhs.K_F15 &&
     lhs.K_y == rhs.K_y &&
-    lhs.K_DOLLAR == rhs.K_DOLLAR &&
     lhs.K_z == rhs.K_z &&
-    lhs.K_KP_ENTER == rhs.K_KP_ENTER &&
-    lhs.K_PAGEDOWN == rhs.K_PAGEDOWN &&
     lhs.K_q == rhs.K_q &&
     lhs.K_p == rhs.K_p &&
     lhs.K_s == rhs.K_s &&
     lhs.K_n == rhs.K_n &&
-    lhs.K_HASH == rhs.K_HASH &&
     lhs.K_t == rhs.K_t &&
     lhs.K_w == rhs.K_w &&
     lhs.K_v == rhs.K_v &&
-    lhs.K_DOWN == rhs.K_DOWN &&
     lhs.K_a == rhs.K_a &&
     lhs.K_k == rhs.K_k &&
     lhs.K_j == rhs.K_j &&
     lhs.K_m == rhs.K_m &&
     lhs.K_l == rhs.K_l &&
     lhs.K_o == rhs.K_o &&
-    lhs.K_UP == rhs.K_UP &&
-    lhs.K_END == rhs.K_END &&
-    lhs.K_RSUPER == rhs.K_RSUPER &&
     lhs.K_c == rhs.K_c &&
     lhs.K_b == rhs.K_b &&
     lhs.K_e == rhs.K_e &&
     lhs.K_d == rhs.K_d &&
     lhs.K_g == rhs.K_g &&
     lhs.K_f == rhs.K_f &&
-    lhs.K_ASTERISK == rhs.K_ASTERISK &&
-    lhs.K_AT == rhs.K_AT &&
-    lhs.K_PAGEUP == rhs.K_PAGEUP &&
-    lhs.K_CAPSLOCK == rhs.K_CAPSLOCK &&
-    lhs.K_LESS == rhs.K_LESS &&
-    lhs.K_PRINT == rhs.K_PRINT &&
-    lhs.K_SLASH == rhs.K_SLASH &&
-    lhs.K_LCTRL == rhs.K_LCTRL &&
-    lhs.K_BACKSLASH == rhs.K_BACKSLASH &&
-    lhs.K_RETURN == rhs.K_RETURN &&
-    lhs.K_MINUS == rhs.K_MINUS &&
-    lhs.K_HELP == rhs.K_HELP &&
     lhs.K_r == rhs.K_r &&
-    lhs.K_9 == rhs.K_9 &&
-    lhs.K_8 == rhs.K_8 &&
-    lhs.K_EXCLAIM == rhs.K_EXCLAIM &&
     lhs.K_x == rhs.K_x &&
-    lhs.K_1 == rhs.K_1 &&
-    lhs.K_0 == rhs.K_0 &&
-    lhs.K_3 == rhs.K_3 &&
-    lhs.K_2 == rhs.K_2 &&
-    lhs.K_5 == rhs.K_5 &&
-    lhs.K_4 == rhs.K_4 &&
-    lhs.K_7 == rhs.K_7 &&
-    lhs.K_6 == rhs.K_6 &&
-    lhs.K_LEFTPAREN == rhs.K_LEFTPAREN &&
-    lhs.K_KP_DIVIDE == rhs.K_KP_DIVIDE &&
-    lhs.K_POWER == rhs.K_POWER &&
-    lhs.K_ESCAPE == rhs.K_ESCAPE &&
-    lhs.K_BACKSPACE == rhs.K_BACKSPACE &&
-    lhs.K_MENU == rhs.K_MENU &&
-    lhs.K_u == rhs.K_u &&
-    lhs.K_PLUS == rhs.K_PLUS &&
-    lhs.K_KP6 == rhs.K_KP6 &&
-    lhs.K_UNDERSCORE == rhs.K_UNDERSCORE &&
-    lhs.K_QUOTE == rhs.K_QUOTE &&
-    lhs.K_RIGHTPAREN == rhs.K_RIGHTPAREN &&
-    lhs.K_RCTRL == rhs.K_RCTRL &&
-    lhs.K_QUOTEDBL == rhs.K_QUOTEDBL &&
-    lhs.K_KP_MULTIPLY == rhs.K_KP_MULTIPLY &&
-    lhs.K_LEFTBRACKET == rhs.K_LEFTBRACKET &&
-    lhs.K_LALT == rhs.K_LALT &&
-    lhs.K_KP8 == rhs.K_KP8 &&
-    lhs.K_KP9 == rhs.K_KP9 &&
-    lhs.K_KP4 == rhs.K_KP4 &&
-    lhs.K_KP5 == rhs.K_KP5 &&
-    lhs.K_BACKQUOTE == rhs.K_BACKQUOTE &&
-    lhs.K_KP7 == rhs.K_KP7 &&
-    lhs.K_KP0 == rhs.K_KP0 &&
-    lhs.K_KP1 == rhs.K_KP1 &&
-    lhs.K_KP2 == rhs.K_KP2 &&
-    lhs.K_KP3 == rhs.K_KP3;
+    lhs.K_u == rhs.K_u;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -939,12 +279,12 @@ struct MD5Sum< ::keyboard::Keyboard_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "2159f4484383d5870ec5060160b0487a";
+    return "b60a24a70bde597cbf13b12c86ab9705";
   }
 
   static const char* value(const ::keyboard::Keyboard_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x2159f4484383d587ULL;
-  static const uint64_t static_value2 = 0x0ec5060160b0487aULL;
+  static const uint64_t static_value1 = 0xb60a24a70bde597cULL;
+  static const uint64_t static_value2 = 0xbf13b12c86ab9705ULL;
 };
 
 template<class ContainerAllocator>
@@ -964,142 +304,33 @@ struct Definition< ::keyboard::Keyboard_<ContainerAllocator> >
   static const char* value()
   {
     return "Header header\n"
-"uint8 K_KP_MINUS\n"
-"uint8 K_F1\n"
-"uint8 K_F2\n"
-"uint8 K_F3\n"
-"uint8 K_COLON\n"
-"uint8 K_F5\n"
-"uint8 K_F6\n"
-"uint8 K_F7\n"
-"uint8 K_F8\n"
-"uint8 K_F9\n"
-"uint8 K_LEFT\n"
-"uint8 K_COMMA\n"
-"uint8 K_RIGHT\n"
-"uint8 K_PAUSE\n"
-"uint8 K_EQUALS\n"
-"uint8 K_SYSREQ\n"
-"uint8 K_F4\n"
-"uint8 K_SEMICOLON\n"
-"uint8 K_AMPERSAND\n"
-"uint8 K_NUMLOCK\n"
-"uint8 K_CLEAR\n"
-"uint8 K_UNKNOWN\n"
-"uint8 K_KP_PLUS\n"
-"uint8 K_QUESTION\n"
-"uint8 K_KP_EQUALS\n"
-"uint8 K_RMETA\n"
-"uint8 K_EURO\n"
-"uint8 K_SCROLLOCK\n"
-"uint8 K_PERIOD\n"
-"uint8 K_SPACE\n"
-"uint8 K_INSERT\n"
-"uint8 K_DELETE\n"
-"uint8 K_CARET\n"
-"uint8 K_HOME\n"
 "uint8 K_i\n"
-"uint8 K_LSUPER\n"
-"uint8 K_GREATER\n"
-"uint8 K_LMETA\n"
-"uint8 K_TAB\n"
-"uint8 K_FIRST\n"
-"uint8 K_KP_PERIOD\n"
-"uint8 K_RALT\n"
-"uint8 K_BREAK\n"
-"uint8 K_MODE\n"
 "uint8 K_h\n"
-"uint8 K_RIGHTBRACKET\n"
-"uint8 K_RSHIFT\n"
-"uint8 K_LSHIFT\n"
-"uint8 K_F12\n"
-"uint8 K_F13\n"
-"uint8 K_F10\n"
-"uint8 K_F11\n"
-"uint8 K_LAST\n"
-"uint8 K_F14\n"
-"uint8 K_F15\n"
 "uint8 K_y\n"
-"uint8 K_DOLLAR\n"
 "uint8 K_z\n"
-"uint8 K_KP_ENTER\n"
-"uint8 K_PAGEDOWN\n"
 "uint8 K_q\n"
 "uint8 K_p\n"
 "uint8 K_s\n"
 "uint8 K_n\n"
-"uint8 K_HASH\n"
 "uint8 K_t\n"
 "uint8 K_w\n"
 "uint8 K_v\n"
-"uint8 K_DOWN\n"
 "uint8 K_a\n"
 "uint8 K_k\n"
 "uint8 K_j\n"
 "uint8 K_m\n"
 "uint8 K_l\n"
 "uint8 K_o\n"
-"uint8 K_UP\n"
-"uint8 K_END\n"
-"uint8 K_RSUPER\n"
 "uint8 K_c\n"
 "uint8 K_b\n"
 "uint8 K_e\n"
 "uint8 K_d\n"
 "uint8 K_g\n"
 "uint8 K_f\n"
-"uint8 K_ASTERISK\n"
-"uint8 K_AT\n"
-"uint8 K_PAGEUP\n"
-"uint8 K_CAPSLOCK\n"
-"uint8 K_LESS\n"
-"uint8 K_PRINT\n"
-"uint8 K_SLASH\n"
-"uint8 K_LCTRL\n"
-"uint8 K_BACKSLASH\n"
-"uint8 K_RETURN\n"
-"uint8 K_MINUS\n"
-"uint8 K_HELP\n"
 "uint8 K_r\n"
-"uint8 K_9\n"
-"uint8 K_8\n"
-"uint8 K_EXCLAIM\n"
 "uint8 K_x\n"
-"uint8 K_1\n"
-"uint8 K_0\n"
-"uint8 K_3\n"
-"uint8 K_2\n"
-"uint8 K_5\n"
-"uint8 K_4\n"
-"uint8 K_7\n"
-"uint8 K_6\n"
-"uint8 K_LEFTPAREN\n"
-"uint8 K_KP_DIVIDE\n"
-"uint8 K_POWER\n"
-"uint8 K_ESCAPE\n"
-"uint8 K_BACKSPACE\n"
-"uint8 K_MENU\n"
 "uint8 K_u\n"
-"uint8 K_PLUS\n"
-"uint8 K_KP6\n"
-"uint8 K_UNDERSCORE\n"
-"uint8 K_QUOTE\n"
-"uint8 K_RIGHTPAREN\n"
-"uint8 K_RCTRL\n"
-"uint8 K_QUOTEDBL\n"
-"uint8 K_KP_MULTIPLY\n"
-"uint8 K_LEFTBRACKET\n"
-"uint8 K_LALT\n"
-"uint8 K_KP8\n"
-"uint8 K_KP9\n"
-"uint8 K_KP4\n"
-"uint8 K_KP5\n"
-"uint8 K_BACKQUOTE\n"
-"uint8 K_KP7\n"
-"uint8 K_KP0\n"
-"uint8 K_KP1\n"
-"uint8 K_KP2\n"
-"uint8 K_KP3\n"
+"\n"
 "================================================================================\n"
 "MSG: std_msgs/Header\n"
 "# Standard metadata for higher-level stamped data types.\n"
@@ -1134,142 +365,32 @@ namespace serialization
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
       stream.next(m.header);
-      stream.next(m.K_KP_MINUS);
-      stream.next(m.K_F1);
-      stream.next(m.K_F2);
-      stream.next(m.K_F3);
-      stream.next(m.K_COLON);
-      stream.next(m.K_F5);
-      stream.next(m.K_F6);
-      stream.next(m.K_F7);
-      stream.next(m.K_F8);
-      stream.next(m.K_F9);
-      stream.next(m.K_LEFT);
-      stream.next(m.K_COMMA);
-      stream.next(m.K_RIGHT);
-      stream.next(m.K_PAUSE);
-      stream.next(m.K_EQUALS);
-      stream.next(m.K_SYSREQ);
-      stream.next(m.K_F4);
-      stream.next(m.K_SEMICOLON);
-      stream.next(m.K_AMPERSAND);
-      stream.next(m.K_NUMLOCK);
-      stream.next(m.K_CLEAR);
-      stream.next(m.K_UNKNOWN);
-      stream.next(m.K_KP_PLUS);
-      stream.next(m.K_QUESTION);
-      stream.next(m.K_KP_EQUALS);
-      stream.next(m.K_RMETA);
-      stream.next(m.K_EURO);
-      stream.next(m.K_SCROLLOCK);
-      stream.next(m.K_PERIOD);
-      stream.next(m.K_SPACE);
-      stream.next(m.K_INSERT);
-      stream.next(m.K_DELETE);
-      stream.next(m.K_CARET);
-      stream.next(m.K_HOME);
       stream.next(m.K_i);
-      stream.next(m.K_LSUPER);
-      stream.next(m.K_GREATER);
-      stream.next(m.K_LMETA);
-      stream.next(m.K_TAB);
-      stream.next(m.K_FIRST);
-      stream.next(m.K_KP_PERIOD);
-      stream.next(m.K_RALT);
-      stream.next(m.K_BREAK);
-      stream.next(m.K_MODE);
       stream.next(m.K_h);
-      stream.next(m.K_RIGHTBRACKET);
-      stream.next(m.K_RSHIFT);
-      stream.next(m.K_LSHIFT);
-      stream.next(m.K_F12);
-      stream.next(m.K_F13);
-      stream.next(m.K_F10);
-      stream.next(m.K_F11);
-      stream.next(m.K_LAST);
-      stream.next(m.K_F14);
-      stream.next(m.K_F15);
       stream.next(m.K_y);
-      stream.next(m.K_DOLLAR);
       stream.next(m.K_z);
-      stream.next(m.K_KP_ENTER);
-      stream.next(m.K_PAGEDOWN);
       stream.next(m.K_q);
       stream.next(m.K_p);
       stream.next(m.K_s);
       stream.next(m.K_n);
-      stream.next(m.K_HASH);
       stream.next(m.K_t);
       stream.next(m.K_w);
       stream.next(m.K_v);
-      stream.next(m.K_DOWN);
       stream.next(m.K_a);
       stream.next(m.K_k);
       stream.next(m.K_j);
       stream.next(m.K_m);
       stream.next(m.K_l);
       stream.next(m.K_o);
-      stream.next(m.K_UP);
-      stream.next(m.K_END);
-      stream.next(m.K_RSUPER);
       stream.next(m.K_c);
       stream.next(m.K_b);
       stream.next(m.K_e);
       stream.next(m.K_d);
       stream.next(m.K_g);
       stream.next(m.K_f);
-      stream.next(m.K_ASTERISK);
-      stream.next(m.K_AT);
-      stream.next(m.K_PAGEUP);
-      stream.next(m.K_CAPSLOCK);
-      stream.next(m.K_LESS);
-      stream.next(m.K_PRINT);
-      stream.next(m.K_SLASH);
-      stream.next(m.K_LCTRL);
-      stream.next(m.K_BACKSLASH);
-      stream.next(m.K_RETURN);
-      stream.next(m.K_MINUS);
-      stream.next(m.K_HELP);
       stream.next(m.K_r);
-      stream.next(m.K_9);
-      stream.next(m.K_8);
-      stream.next(m.K_EXCLAIM);
       stream.next(m.K_x);
-      stream.next(m.K_1);
-      stream.next(m.K_0);
-      stream.next(m.K_3);
-      stream.next(m.K_2);
-      stream.next(m.K_5);
-      stream.next(m.K_4);
-      stream.next(m.K_7);
-      stream.next(m.K_6);
-      stream.next(m.K_LEFTPAREN);
-      stream.next(m.K_KP_DIVIDE);
-      stream.next(m.K_POWER);
-      stream.next(m.K_ESCAPE);
-      stream.next(m.K_BACKSPACE);
-      stream.next(m.K_MENU);
       stream.next(m.K_u);
-      stream.next(m.K_PLUS);
-      stream.next(m.K_KP6);
-      stream.next(m.K_UNDERSCORE);
-      stream.next(m.K_QUOTE);
-      stream.next(m.K_RIGHTPAREN);
-      stream.next(m.K_RCTRL);
-      stream.next(m.K_QUOTEDBL);
-      stream.next(m.K_KP_MULTIPLY);
-      stream.next(m.K_LEFTBRACKET);
-      stream.next(m.K_LALT);
-      stream.next(m.K_KP8);
-      stream.next(m.K_KP9);
-      stream.next(m.K_KP4);
-      stream.next(m.K_KP5);
-      stream.next(m.K_BACKQUOTE);
-      stream.next(m.K_KP7);
-      stream.next(m.K_KP0);
-      stream.next(m.K_KP1);
-      stream.next(m.K_KP2);
-      stream.next(m.K_KP3);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -1291,126 +412,14 @@ struct Printer< ::keyboard::Keyboard_<ContainerAllocator> >
     s << indent << "header: ";
     s << std::endl;
     Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
-    s << indent << "K_KP_MINUS: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP_MINUS);
-    s << indent << "K_F1: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F1);
-    s << indent << "K_F2: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F2);
-    s << indent << "K_F3: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F3);
-    s << indent << "K_COLON: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_COLON);
-    s << indent << "K_F5: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F5);
-    s << indent << "K_F6: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F6);
-    s << indent << "K_F7: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F7);
-    s << indent << "K_F8: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F8);
-    s << indent << "K_F9: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F9);
-    s << indent << "K_LEFT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LEFT);
-    s << indent << "K_COMMA: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_COMMA);
-    s << indent << "K_RIGHT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RIGHT);
-    s << indent << "K_PAUSE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_PAUSE);
-    s << indent << "K_EQUALS: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_EQUALS);
-    s << indent << "K_SYSREQ: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_SYSREQ);
-    s << indent << "K_F4: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F4);
-    s << indent << "K_SEMICOLON: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_SEMICOLON);
-    s << indent << "K_AMPERSAND: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_AMPERSAND);
-    s << indent << "K_NUMLOCK: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_NUMLOCK);
-    s << indent << "K_CLEAR: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_CLEAR);
-    s << indent << "K_UNKNOWN: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_UNKNOWN);
-    s << indent << "K_KP_PLUS: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP_PLUS);
-    s << indent << "K_QUESTION: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_QUESTION);
-    s << indent << "K_KP_EQUALS: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP_EQUALS);
-    s << indent << "K_RMETA: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RMETA);
-    s << indent << "K_EURO: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_EURO);
-    s << indent << "K_SCROLLOCK: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_SCROLLOCK);
-    s << indent << "K_PERIOD: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_PERIOD);
-    s << indent << "K_SPACE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_SPACE);
-    s << indent << "K_INSERT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_INSERT);
-    s << indent << "K_DELETE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_DELETE);
-    s << indent << "K_CARET: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_CARET);
-    s << indent << "K_HOME: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_HOME);
     s << indent << "K_i: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_i);
-    s << indent << "K_LSUPER: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LSUPER);
-    s << indent << "K_GREATER: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_GREATER);
-    s << indent << "K_LMETA: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LMETA);
-    s << indent << "K_TAB: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_TAB);
-    s << indent << "K_FIRST: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_FIRST);
-    s << indent << "K_KP_PERIOD: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP_PERIOD);
-    s << indent << "K_RALT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RALT);
-    s << indent << "K_BREAK: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_BREAK);
-    s << indent << "K_MODE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_MODE);
     s << indent << "K_h: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_h);
-    s << indent << "K_RIGHTBRACKET: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RIGHTBRACKET);
-    s << indent << "K_RSHIFT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RSHIFT);
-    s << indent << "K_LSHIFT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LSHIFT);
-    s << indent << "K_F12: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F12);
-    s << indent << "K_F13: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F13);
-    s << indent << "K_F10: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F10);
-    s << indent << "K_F11: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F11);
-    s << indent << "K_LAST: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LAST);
-    s << indent << "K_F14: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F14);
-    s << indent << "K_F15: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_F15);
     s << indent << "K_y: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_y);
-    s << indent << "K_DOLLAR: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_DOLLAR);
     s << indent << "K_z: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_z);
-    s << indent << "K_KP_ENTER: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP_ENTER);
-    s << indent << "K_PAGEDOWN: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_PAGEDOWN);
     s << indent << "K_q: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_q);
     s << indent << "K_p: ";
@@ -1419,16 +428,12 @@ struct Printer< ::keyboard::Keyboard_<ContainerAllocator> >
     Printer<uint8_t>::stream(s, indent + "  ", v.K_s);
     s << indent << "K_n: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_n);
-    s << indent << "K_HASH: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_HASH);
     s << indent << "K_t: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_t);
     s << indent << "K_w: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_w);
     s << indent << "K_v: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_v);
-    s << indent << "K_DOWN: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_DOWN);
     s << indent << "K_a: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_a);
     s << indent << "K_k: ";
@@ -1441,12 +446,6 @@ struct Printer< ::keyboard::Keyboard_<ContainerAllocator> >
     Printer<uint8_t>::stream(s, indent + "  ", v.K_l);
     s << indent << "K_o: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_o);
-    s << indent << "K_UP: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_UP);
-    s << indent << "K_END: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_END);
-    s << indent << "K_RSUPER: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RSUPER);
     s << indent << "K_c: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_c);
     s << indent << "K_b: ";
@@ -1459,110 +458,12 @@ struct Printer< ::keyboard::Keyboard_<ContainerAllocator> >
     Printer<uint8_t>::stream(s, indent + "  ", v.K_g);
     s << indent << "K_f: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_f);
-    s << indent << "K_ASTERISK: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_ASTERISK);
-    s << indent << "K_AT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_AT);
-    s << indent << "K_PAGEUP: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_PAGEUP);
-    s << indent << "K_CAPSLOCK: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_CAPSLOCK);
-    s << indent << "K_LESS: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LESS);
-    s << indent << "K_PRINT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_PRINT);
-    s << indent << "K_SLASH: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_SLASH);
-    s << indent << "K_LCTRL: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LCTRL);
-    s << indent << "K_BACKSLASH: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_BACKSLASH);
-    s << indent << "K_RETURN: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RETURN);
-    s << indent << "K_MINUS: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_MINUS);
-    s << indent << "K_HELP: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_HELP);
     s << indent << "K_r: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_r);
-    s << indent << "K_9: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_9);
-    s << indent << "K_8: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_8);
-    s << indent << "K_EXCLAIM: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_EXCLAIM);
     s << indent << "K_x: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_x);
-    s << indent << "K_1: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_1);
-    s << indent << "K_0: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_0);
-    s << indent << "K_3: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_3);
-    s << indent << "K_2: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_2);
-    s << indent << "K_5: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_5);
-    s << indent << "K_4: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_4);
-    s << indent << "K_7: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_7);
-    s << indent << "K_6: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_6);
-    s << indent << "K_LEFTPAREN: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LEFTPAREN);
-    s << indent << "K_KP_DIVIDE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP_DIVIDE);
-    s << indent << "K_POWER: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_POWER);
-    s << indent << "K_ESCAPE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_ESCAPE);
-    s << indent << "K_BACKSPACE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_BACKSPACE);
-    s << indent << "K_MENU: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_MENU);
     s << indent << "K_u: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.K_u);
-    s << indent << "K_PLUS: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_PLUS);
-    s << indent << "K_KP6: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP6);
-    s << indent << "K_UNDERSCORE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_UNDERSCORE);
-    s << indent << "K_QUOTE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_QUOTE);
-    s << indent << "K_RIGHTPAREN: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RIGHTPAREN);
-    s << indent << "K_RCTRL: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_RCTRL);
-    s << indent << "K_QUOTEDBL: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_QUOTEDBL);
-    s << indent << "K_KP_MULTIPLY: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP_MULTIPLY);
-    s << indent << "K_LEFTBRACKET: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LEFTBRACKET);
-    s << indent << "K_LALT: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_LALT);
-    s << indent << "K_KP8: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP8);
-    s << indent << "K_KP9: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP9);
-    s << indent << "K_KP4: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP4);
-    s << indent << "K_KP5: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP5);
-    s << indent << "K_BACKQUOTE: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_BACKQUOTE);
-    s << indent << "K_KP7: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP7);
-    s << indent << "K_KP0: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP0);
-    s << indent << "K_KP1: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP1);
-    s << indent << "K_KP2: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP2);
-    s << indent << "K_KP3: ";
-    Printer<uint8_t>::stream(s, indent + "  ", v.K_KP3);
   }
 };
 

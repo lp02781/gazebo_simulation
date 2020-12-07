@@ -1,0 +1,4 @@
+<launch>
+	<node name="image_front" pkg="terserah" output="screen" type="image_front" />
+	<node name="simple_red" pkg="terserah" output="screen" type="simple_red"/>
+</launch>

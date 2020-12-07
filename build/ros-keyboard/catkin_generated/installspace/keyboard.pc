@@ -1,8 +1,0 @@
-prefix=/home/mfikih15/gazebo_simulation/install
-
-Name: keyboard
-Description: Description of keyboard
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime

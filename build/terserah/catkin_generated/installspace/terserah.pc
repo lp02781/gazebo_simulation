@@ -3,6 +3,6 @@ prefix=/home/mfikih15/gazebo_simulation/install
 Name: terserah
 Description: Description of terserah
 Version: 0.0.0
-Cflags: 
+Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime
