@@ -57,38 +57,38 @@ include terserah/CMakeFiles/simple_red.dir/progress.make
 # Include the compile flags for this target's objects.
 include terserah/CMakeFiles/simple_red.dir/flags.make
 
-terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o: terserah/CMakeFiles/simple_red.dir/flags.make
-terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/image/simple_red.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/image/simple_red.cpp
+terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o: terserah/CMakeFiles/simple_red.dir/flags.make
+terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/simple_red.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_red.dir/src/simple_red.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/simple_red.cpp
 
-terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_red.dir/src/image/simple_red.cpp.i"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/image/simple_red.cpp > CMakeFiles/simple_red.dir/src/image/simple_red.cpp.i
+terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_red.dir/src/simple_red.cpp.i"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/simple_red.cpp > CMakeFiles/simple_red.dir/src/simple_red.cpp.i
 
-terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_red.dir/src/image/simple_red.cpp.s"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/image/simple_red.cpp -o CMakeFiles/simple_red.dir/src/image/simple_red.cpp.s
+terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_red.dir/src/simple_red.cpp.s"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/simple_red.cpp -o CMakeFiles/simple_red.dir/src/simple_red.cpp.s
 
-terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.requires:
+terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.requires:
 
-.PHONY : terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.requires
+.PHONY : terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.requires
 
-terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.provides: terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.requires
-	$(MAKE) -f terserah/CMakeFiles/simple_red.dir/build.make terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.provides.build
-.PHONY : terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.provides
+terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.provides: terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.requires
+	$(MAKE) -f terserah/CMakeFiles/simple_red.dir/build.make terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.provides.build
+.PHONY : terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.provides
 
-terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.provides.build: terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o
+terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.provides.build: terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o
 
 
 # Object files for target simple_red
 simple_red_OBJECTS = \
-"CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o"
+"CMakeFiles/simple_red.dir/src/simple_red.cpp.o"
 
 # External object files for target simple_red
 simple_red_EXTERNAL_OBJECTS =
 
-/home/mfikih15/gazebo_simulation/devel/lib/terserah/simple_red: terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o
+/home/mfikih15/gazebo_simulation/devel/lib/terserah/simple_red: terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/simple_red: terserah/CMakeFiles/simple_red.dir/build.make
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/simple_red: /opt/ros/melodic/lib/libcv_bridge.so
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/simple_red: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
@@ -174,7 +174,7 @@ terserah/CMakeFiles/simple_red.dir/build: /home/mfikih15/gazebo_simulation/devel
 
 .PHONY : terserah/CMakeFiles/simple_red.dir/build
 
-terserah/CMakeFiles/simple_red.dir/requires: terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.o.requires
+terserah/CMakeFiles/simple_red.dir/requires: terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o.requires
 
 .PHONY : terserah/CMakeFiles/simple_red.dir/requires
 

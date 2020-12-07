@@ -28,7 +28,7 @@ iostream
 stdio.h
 -
 
-/home/mfikih15/gazebo_simulation/src/terserah/src/image/simple_red.cpp
+/home/mfikih15/gazebo_simulation/src/terserah/src/simple_red.cpp
 ros/ros.h
 -
 image_transport/image_transport.h
@@ -36,17 +36,17 @@ image_transport/image_transport.h
 opencv2/highgui/highgui.hpp
 -
 opencv2/imgproc/imgproc.hpp
-/home/mfikih15/gazebo_simulation/src/terserah/src/image/opencv2/imgproc/imgproc.hpp
+/home/mfikih15/gazebo_simulation/src/terserah/src/opencv2/imgproc/imgproc.hpp
 cv_bridge/cv_bridge.h
 -
 iostream
 -
 stdio.h
 -
-../../include/terserah/terserah.hpp
+../include/terserah/terserah.hpp
 /home/mfikih15/gazebo_simulation/src/terserah/include/terserah/terserah.hpp
 terserah/image_process.h
-/home/mfikih15/gazebo_simulation/src/terserah/src/image/terserah/image_process.h
+/home/mfikih15/gazebo_simulation/src/terserah/src/terserah/image_process.h
 
 /opt/ros/melodic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

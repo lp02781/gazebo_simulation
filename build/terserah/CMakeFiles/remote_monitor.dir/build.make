@@ -57,38 +57,38 @@ include terserah/CMakeFiles/remote_monitor.dir/progress.make
 # Include the compile flags for this target's objects.
 include terserah/CMakeFiles/remote_monitor.dir/flags.make
 
-terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o: terserah/CMakeFiles/remote_monitor.dir/flags.make
-terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/main/remote_monitor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/main/remote_monitor.cpp
+terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o: terserah/CMakeFiles/remote_monitor.dir/flags.make
+terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/remote_monitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/remote_monitor.cpp
 
-terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.i"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/main/remote_monitor.cpp > CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.i
+terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.i"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/remote_monitor.cpp > CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.i
 
-terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.s"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/main/remote_monitor.cpp -o CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.s
+terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.s"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/remote_monitor.cpp -o CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.s
 
-terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.requires:
+terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.requires:
 
-.PHONY : terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.requires
+.PHONY : terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.requires
 
-terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.provides: terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.requires
-	$(MAKE) -f terserah/CMakeFiles/remote_monitor.dir/build.make terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.provides.build
-.PHONY : terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.provides
+terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.provides: terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.requires
+	$(MAKE) -f terserah/CMakeFiles/remote_monitor.dir/build.make terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.provides.build
+.PHONY : terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.provides
 
-terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.provides.build: terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o
+terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.provides.build: terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o
 
 
 # Object files for target remote_monitor
 remote_monitor_OBJECTS = \
-"CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o"
+"CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o"
 
 # External object files for target remote_monitor
 remote_monitor_EXTERNAL_OBJECTS =
 
-/home/mfikih15/gazebo_simulation/devel/lib/terserah/remote_monitor: terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o
+/home/mfikih15/gazebo_simulation/devel/lib/terserah/remote_monitor: terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/remote_monitor: terserah/CMakeFiles/remote_monitor.dir/build.make
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/remote_monitor: /opt/ros/melodic/lib/libcv_bridge.so
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/remote_monitor: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
@@ -131,7 +131,7 @@ terserah/CMakeFiles/remote_monitor.dir/build: /home/mfikih15/gazebo_simulation/d
 
 .PHONY : terserah/CMakeFiles/remote_monitor.dir/build
 
-terserah/CMakeFiles/remote_monitor.dir/requires: terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o.requires
+terserah/CMakeFiles/remote_monitor.dir/requires: terserah/CMakeFiles/remote_monitor.dir/src/remote_monitor.cpp.o.requires
 
 .PHONY : terserah/CMakeFiles/remote_monitor.dir/requires
 

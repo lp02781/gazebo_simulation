@@ -57,38 +57,38 @@ include terserah/CMakeFiles/image_front.dir/progress.make
 # Include the compile flags for this target's objects.
 include terserah/CMakeFiles/image_front.dir/flags.make
 
-terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o: terserah/CMakeFiles/image_front.dir/flags.make
-terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/image/image_front.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_front.dir/src/image/image_front.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/image/image_front.cpp
+terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o: terserah/CMakeFiles/image_front.dir/flags.make
+terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/image_front.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_front.dir/src/image_front.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/image_front.cpp
 
-terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_front.dir/src/image/image_front.cpp.i"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/image/image_front.cpp > CMakeFiles/image_front.dir/src/image/image_front.cpp.i
+terserah/CMakeFiles/image_front.dir/src/image_front.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_front.dir/src/image_front.cpp.i"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/image_front.cpp > CMakeFiles/image_front.dir/src/image_front.cpp.i
 
-terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_front.dir/src/image/image_front.cpp.s"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/image/image_front.cpp -o CMakeFiles/image_front.dir/src/image/image_front.cpp.s
+terserah/CMakeFiles/image_front.dir/src/image_front.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_front.dir/src/image_front.cpp.s"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/image_front.cpp -o CMakeFiles/image_front.dir/src/image_front.cpp.s
 
-terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.requires:
+terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.requires:
 
-.PHONY : terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.requires
+.PHONY : terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.requires
 
-terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.provides: terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.requires
-	$(MAKE) -f terserah/CMakeFiles/image_front.dir/build.make terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.provides.build
-.PHONY : terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.provides
+terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.provides: terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.requires
+	$(MAKE) -f terserah/CMakeFiles/image_front.dir/build.make terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.provides.build
+.PHONY : terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.provides
 
-terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.provides.build: terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o
+terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.provides.build: terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o
 
 
 # Object files for target image_front
 image_front_OBJECTS = \
-"CMakeFiles/image_front.dir/src/image/image_front.cpp.o"
+"CMakeFiles/image_front.dir/src/image_front.cpp.o"
 
 # External object files for target image_front
 image_front_EXTERNAL_OBJECTS =
 
-/home/mfikih15/gazebo_simulation/devel/lib/terserah/image_front: terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o
+/home/mfikih15/gazebo_simulation/devel/lib/terserah/image_front: terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/image_front: terserah/CMakeFiles/image_front.dir/build.make
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/image_front: /opt/ros/melodic/lib/libcv_bridge.so
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/image_front: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
@@ -174,7 +174,7 @@ terserah/CMakeFiles/image_front.dir/build: /home/mfikih15/gazebo_simulation/deve
 
 .PHONY : terserah/CMakeFiles/image_front.dir/build
 
-terserah/CMakeFiles/image_front.dir/requires: terserah/CMakeFiles/image_front.dir/src/image/image_front.cpp.o.requires
+terserah/CMakeFiles/image_front.dir/requires: terserah/CMakeFiles/image_front.dir/src/image_front.cpp.o.requires
 
 .PHONY : terserah/CMakeFiles/image_front.dir/requires
 

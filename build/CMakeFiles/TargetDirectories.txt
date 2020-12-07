@@ -76,7 +76,7 @@
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/install.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/list_install_components.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/edit_cache.dir
-/home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/controller_quad.dir
+/home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/quad.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/remote_monitor.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/simple_red.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/image_front.dir

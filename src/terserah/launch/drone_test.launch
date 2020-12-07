@@ -1,4 +1,4 @@
 <launch>
 	<node name="remote_monitor" pkg="terserah" output="screen" type="remote_monitor"/>
-	<node name="controller_quad" pkg="terserah" output="screen" type="controller_quad"/>
+	<node name="quad" pkg="terserah" output="screen" type="quad"/>
 </launch>

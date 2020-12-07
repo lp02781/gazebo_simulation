@@ -12,8 +12,8 @@ iostream
 stdio.h
 -
 
-/home/mfikih15/gazebo_simulation/src/terserah/src/image/image_front.cpp
-../../include/terserah/terserah.hpp
+/home/mfikih15/gazebo_simulation/src/terserah/src/image_front.cpp
+../include/terserah/terserah.hpp
 /home/mfikih15/gazebo_simulation/src/terserah/include/terserah/terserah.hpp
 ros/ros.h
 -

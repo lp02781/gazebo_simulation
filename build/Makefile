@@ -675,17 +675,17 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named controller_quad
+# Target rules for targets named quad
 
 # Build rule for target.
-controller_quad: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_quad
-.PHONY : controller_quad
+quad: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quad
+.PHONY : quad
 
 # fast build rule for target.
-controller_quad/fast:
-	$(MAKE) -f terserah/CMakeFiles/controller_quad.dir/build.make terserah/CMakeFiles/controller_quad.dir/build
-.PHONY : controller_quad/fast
+quad/fast:
+	$(MAKE) -f terserah/CMakeFiles/quad.dir/build.make terserah/CMakeFiles/quad.dir/build
+.PHONY : quad/fast
 
 #=============================================================================
 # Target rules for targets named remote_monitor
@@ -1259,7 +1259,7 @@ help:
 	@echo "... pid_genpy"
 	@echo "... controller_adaptive"
 	@echo "... roscpp_generate_messages_cpp"
-	@echo "... controller_quad"
+	@echo "... quad"
 	@echo "... remote_monitor"
 	@echo "... simple_red"
 	@echo "... image_front"
