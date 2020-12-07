@@ -1,63 +1,112 @@
-#include "../../include/terserah/terserah.hpp"
-#include "ros/ros.h"
-#include "whatever/rc_number.h"
-#include "std_msgs/Bool.h"
-#include <string>
-#include <string.h>
-#include <iostream>
+#include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include <ros/ros.h>
+#include <std_msgs/String.h>
+#include <termios.h>
+#include <string.h>
 
-void rcinReceiver(const mavros_msgs::RCIn& rc_in_data);
+//Global Variables
+ros::Time g_last_request;
+std_msgs::String g_key;
 
-using namespace std;
+char g_key_command_received = 'p';
+char g_key_press;
+
+//Constants
+const double KEY_COMMAND_PUBLISH_DURATION = 1;
+const double NODE_RUN_RATE = 100.0;//rate in Hz
+
+//Prototype
+char keyboardInterrupt();
+void keyCommandReceived(const std_msgs::String::ConstPtr& msg);
 
 int main(int argc, char **argv){
-
-	ros::init(argc, argv, "remote_monitor");
-	ros::NodeHandle ovrd_mon;
-	ros::Subscriber rc_in_sub 	= ovrd_mon.subscribe("/mavros/rc/in", 8, rcinReceiver);
-	
-	ROS_WARN("NC : remote_monitor.cpp active");
-	
-	while(ros::ok()){
+	ros::init(argc, argv, "keyboard_commands");
+	ros::NodeHandle node_handle;
+  	ros::Publisher key_command_publisher = node_handle.advertise<std_msgs::String>
+		("key_commands", 1000);
+	ros::Subscriber key_command_received_subscriber = node_handle.subscribe
+		("key_command_receive", 1000, keyCommandReceived);
+	ros::Rate loop_rate(NODE_RUN_RATE);
+	while (ros::ok()){
+		if(ros::Time::now() - g_last_request > ros::Duration(KEY_COMMAND_PUBLISH_DURATION)){
+			switch (g_key_command_received) {
+				case 'p':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;
+				case 'o':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;
+				case 'w':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;
+				case 's':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;
+				case 'd':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;
+				case 'a':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;
+				case 'k':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;
+				case 'l':
+					printf("\n\nEnter key command: ");
+					g_key_press = keyboardInterrupt();
+					printf("\nKey command entered: %c\n",g_key_press);
+					g_key.data = g_key_press;
+					break;	
+				case 'z':
+					ros::shutdown();
+					break;
+				default:
+					g_key.data = 'm';
+					break;
+			}
+			key_command_publisher.publish(g_key);
+			g_last_request = ros::Time::now();
+		}
 		ros::spinOnce();
+		loop_rate.sleep();
 	}
+	return(0);
 }
 
-void rcinReceiver(const mavros_msgs::RCIn& rc_in_data){
-	int x;
-	for (x=0; x<8;x++){
-		rc_in_data_channel[x] = rc_in_data.channels[x];
-	}
-	//ROS_ERROR("%d", rc_in_data_channel[SIMPLE_PIN]);
-		if(rc_in_data_channel[SIMPLE_PIN] < PWM_LOW ){
-			//ROS_INFO("1");
-			number_flight = simple_manuver;
-		}
-		else if(rc_in_data_channel[SIMPLE_PIN] > PWM_UP){
-			//ROS_INFO("2");
-			number_flight = simple_speed;
-		}
-		else{
-			//ROS_INFO("0");
-			number_flight = zero_flag;
-		}
-		if(rc_in_data_channel[RECORD_PIN] < PWM_LOW ){
-			//ROS_INFO("3");
-			record_number = record_flag;
-		}
-		else if(rc_in_data_channel[RECORD_PIN] > PWM_UP){
-			//ROS_INFO("4");
-			record_number = player_flag;
-		}
-		else{
-			//ROS_INFO("5");
-			record_number = zero_record;
-		}
-		sleep(0.5);
-		rc_action.rc_number = number_flight;
-		rc_action.record_number = record_number;
-		pub_rc_flag.publish(rc_action);
-		//ROS_ERROR ("%d", number_flight);
+char keyboardInterrupt(){
+	static struct termios oldTermios, newTermios;
+	newTermios.c_cc[VMIN] = 0;
+	newTermios.c_cc[VTIME] = 0;
+	tcgetattr(STDIN_FILENO, &oldTermios);           // save old settings
+	newTermios = oldTermios;
+	newTermios.c_lflag &= ~(ICANON);                 // disable buffering
+	tcsetattr(STDIN_FILENO, TCSANOW, &newTermios);  // apply new settings
+	g_key_press = getchar();  // read character (non-blocking)
+	tcsetattr(STDIN_FILENO, TCSANOW, &oldTermios);  // restore old settings
+	return g_key_press;
+}
+void keyCommandReceived(const std_msgs::String::ConstPtr& msg){
+	g_key_command_received = *msg->data.c_str();
 }

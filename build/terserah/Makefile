@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+terserah/CMakeFiles/controller_quad.dir/rule:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 terserah/CMakeFiles/controller_quad.dir/rule
+.PHONY : terserah/CMakeFiles/controller_quad.dir/rule
+
+# Convenience name for target.
+controller_quad: terserah/CMakeFiles/controller_quad.dir/rule
+
+.PHONY : controller_quad
+
+# fast build rule for target.
+controller_quad/fast:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/controller_quad.dir/build.make terserah/CMakeFiles/controller_quad.dir/build
+.PHONY : controller_quad/fast
+
+# Convenience name for target.
+terserah/CMakeFiles/remote_monitor.dir/rule:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 terserah/CMakeFiles/remote_monitor.dir/rule
+.PHONY : terserah/CMakeFiles/remote_monitor.dir/rule
+
+# Convenience name for target.
+remote_monitor: terserah/CMakeFiles/remote_monitor.dir/rule
+
+.PHONY : remote_monitor
+
+# fast build rule for target.
+remote_monitor/fast:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/remote_monitor.dir/build.make terserah/CMakeFiles/remote_monitor.dir/build
+.PHONY : remote_monitor/fast
+
+# Convenience name for target.
 terserah/CMakeFiles/simple_red.dir/rule:
 	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 terserah/CMakeFiles/simple_red.dir/rule
 .PHONY : terserah/CMakeFiles/simple_red.dir/rule
@@ -806,6 +836,60 @@ src/image/simple_red.cpp.s:
 	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/simple_red.dir/build.make terserah/CMakeFiles/simple_red.dir/src/image/simple_red.cpp.s
 .PHONY : src/image/simple_red.cpp.s
 
+src/main/remote_monitor.o: src/main/remote_monitor.cpp.o
+
+.PHONY : src/main/remote_monitor.o
+
+# target to build an object file
+src/main/remote_monitor.cpp.o:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/remote_monitor.dir/build.make terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.o
+.PHONY : src/main/remote_monitor.cpp.o
+
+src/main/remote_monitor.i: src/main/remote_monitor.cpp.i
+
+.PHONY : src/main/remote_monitor.i
+
+# target to preprocess a source file
+src/main/remote_monitor.cpp.i:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/remote_monitor.dir/build.make terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.i
+.PHONY : src/main/remote_monitor.cpp.i
+
+src/main/remote_monitor.s: src/main/remote_monitor.cpp.s
+
+.PHONY : src/main/remote_monitor.s
+
+# target to generate assembly for a file
+src/main/remote_monitor.cpp.s:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/remote_monitor.dir/build.make terserah/CMakeFiles/remote_monitor.dir/src/main/remote_monitor.cpp.s
+.PHONY : src/main/remote_monitor.cpp.s
+
+src/quad/controller_quad.o: src/quad/controller_quad.cpp.o
+
+.PHONY : src/quad/controller_quad.o
+
+# target to build an object file
+src/quad/controller_quad.cpp.o:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/controller_quad.dir/build.make terserah/CMakeFiles/controller_quad.dir/src/quad/controller_quad.cpp.o
+.PHONY : src/quad/controller_quad.cpp.o
+
+src/quad/controller_quad.i: src/quad/controller_quad.cpp.i
+
+.PHONY : src/quad/controller_quad.i
+
+# target to preprocess a source file
+src/quad/controller_quad.cpp.i:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/controller_quad.dir/build.make terserah/CMakeFiles/controller_quad.dir/src/quad/controller_quad.cpp.i
+.PHONY : src/quad/controller_quad.cpp.i
+
+src/quad/controller_quad.s: src/quad/controller_quad.cpp.s
+
+.PHONY : src/quad/controller_quad.s
+
+# target to generate assembly for a file
+src/quad/controller_quad.cpp.s:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/controller_quad.dir/build.make terserah/CMakeFiles/controller_quad.dir/src/quad/controller_quad.cpp.s
+.PHONY : src/quad/controller_quad.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -816,6 +900,8 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... controller_quad"
+	@echo "... remote_monitor"
 	@echo "... simple_red"
 	@echo "... image_front"
 	@echo "... mavros_msgs_generate_messages_nodejs"
@@ -864,6 +950,12 @@ help:
 	@echo "... src/image/simple_red.o"
 	@echo "... src/image/simple_red.i"
 	@echo "... src/image/simple_red.s"
+	@echo "... src/main/remote_monitor.o"
+	@echo "... src/main/remote_monitor.i"
+	@echo "... src/main/remote_monitor.s"
+	@echo "... src/quad/controller_quad.o"
+	@echo "... src/quad/controller_quad.i"
+	@echo "... src/quad/controller_quad.s"
 .PHONY : help
 
 

@@ -675,6 +675,32 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named controller_quad
+
+# Build rule for target.
+controller_quad: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_quad
+.PHONY : controller_quad
+
+# fast build rule for target.
+controller_quad/fast:
+	$(MAKE) -f terserah/CMakeFiles/controller_quad.dir/build.make terserah/CMakeFiles/controller_quad.dir/build
+.PHONY : controller_quad/fast
+
+#=============================================================================
+# Target rules for targets named remote_monitor
+
+# Build rule for target.
+remote_monitor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 remote_monitor
+.PHONY : remote_monitor
+
+# fast build rule for target.
+remote_monitor/fast:
+	$(MAKE) -f terserah/CMakeFiles/remote_monitor.dir/build.make terserah/CMakeFiles/remote_monitor.dir/build
+.PHONY : remote_monitor/fast
+
+#=============================================================================
 # Target rules for targets named simple_red
 
 # Build rule for target.
@@ -1233,6 +1259,8 @@ help:
 	@echo "... pid_genpy"
 	@echo "... controller_adaptive"
 	@echo "... roscpp_generate_messages_cpp"
+	@echo "... controller_quad"
+	@echo "... remote_monitor"
 	@echo "... simple_red"
 	@echo "... image_front"
 	@echo "... mavros_msgs_generate_messages_nodejs"

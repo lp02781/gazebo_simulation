@@ -173,6 +173,17 @@ target_link_libraries(simple_red
 ${catkin_LIBRARIES}
 ${OpenCV_LIBRARIES}
 )
+
+add_executable(remote_monitor src/main/remote_monitor.cpp )
+target_link_libraries(remote_monitor
+${catkin_LIBRARIES}
+)
+
+add_executable(controller_quad src/quad/controller_quad.cpp )
+target_link_libraries(controller_quad
+${catkin_LIBRARIES}
+)
+
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 
