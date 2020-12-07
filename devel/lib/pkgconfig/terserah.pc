@@ -1,0 +1,8 @@
+prefix=/home/mfikih15/gazebo_simulation/devel
+
+Name: terserah
+Description: Description of terserah
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

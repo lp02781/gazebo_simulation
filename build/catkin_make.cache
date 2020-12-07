@@ -1,0 +1,2 @@
+pid:ros-keyboard:terserah
+-DCATKIN_DEVEL_PREFIX=/home/mfikih15/gazebo_simulation/devel -DCMAKE_INSTALL_PREFIX=/home/mfikih15/gazebo_simulation/install -G Unix Makefiles
