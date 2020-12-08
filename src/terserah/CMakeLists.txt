@@ -56,6 +56,7 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++0x")
 add_message_files(
 	FILES
 	image_process.msg
+	pid_process.msg
 )
 
 

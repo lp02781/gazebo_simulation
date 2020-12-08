@@ -3,5 +3,7 @@
   (:export
    "<IMAGE_PROCESS>"
    "IMAGE_PROCESS"
+   "<PID_PROCESS>"
+   "PID_PROCESS"
   ))
 

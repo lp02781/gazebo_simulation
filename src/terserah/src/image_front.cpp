@@ -16,8 +16,6 @@ int main(int argc, char** argv)
 	image_transport::ImageTransport it(nh);
 	image_transport::Publisher pub = it.advertise("/camera/image", 1, true);
 	
-	ROS_WARN("NC : image_front.cpp active");
-	
 	VideoCapture cap(number_camera); 
 	if(!cap.isOpened()){
 		ROS_ERROR ("Error opening camera.");	  

@@ -7,18 +7,20 @@
 #include <stdio.h>
 #include "../include/terserah/terserah.hpp"
 #include "terserah/image_process.h"
+#include "terserah/pid_process.h"
 
 using namespace std;
 using namespace cv;
 
 void imageProcessing(Mat input_image);
+void pid_process_cb(const terserah::pid_process& pid);
 
 Mat receive_image;
 
 int state_x;
-int setpoint_x=200;
 int state_y;
-int setpoint_y=200;
+int setpoint_x;
+int setpoint_y;
 
 terserah::image_process image;
 ros::Publisher pub_state_camera;
@@ -46,6 +48,7 @@ int main(int argc, char **argv){
 	
 	pub_state_camera 	= nh.advertise<terserah::image_process>("/terserah/image/process", 1);
 	ros::Subscriber sub = nh.subscribe("camera/image/compressed", 1, imageCallback);
+	ros::Subscriber sub_pid_process 	= nh.subscribe("/terserah/pid/process", 1, pid_process_cb);
 	
 	namedWindow("panel_red", CV_WINDOW_AUTOSIZE);
 	
@@ -64,6 +67,11 @@ int main(int argc, char **argv){
 	while (ros::ok()) {
 		ros::spinOnce();
 	}
+}
+
+void pid_process_cb(const terserah::pid_process& pid){
+	setpoint_x	= pid.setpoint_x;
+	setpoint_y	= pid.setpoint_y;
 }
 
 void imageProcessing(Mat input_image){

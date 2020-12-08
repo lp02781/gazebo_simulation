@@ -25,15 +25,11 @@ struct image_process_
 
   image_process_()
     : state_x(0)
-    , state_y(0)
-    , setpoint_x(0)
-    , setpoint_y(0)  {
+    , state_y(0)  {
     }
   image_process_(const ContainerAllocator& _alloc)
     : state_x(0)
-    , state_y(0)
-    , setpoint_x(0)
-    , setpoint_y(0)  {
+    , state_y(0)  {
   (void)_alloc;
     }
 
@@ -44,12 +40,6 @@ struct image_process_
 
    typedef int16_t _state_y_type;
   _state_y_type state_y;
-
-   typedef int16_t _setpoint_x_type;
-  _setpoint_x_type setpoint_x;
-
-   typedef int16_t _setpoint_y_type;
-  _setpoint_y_type setpoint_y;
 
 
 
@@ -81,9 +71,7 @@ template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::terserah::image_process_<ContainerAllocator1> & lhs, const ::terserah::image_process_<ContainerAllocator2> & rhs)
 {
   return lhs.state_x == rhs.state_x &&
-    lhs.state_y == rhs.state_y &&
-    lhs.setpoint_x == rhs.setpoint_x &&
-    lhs.setpoint_y == rhs.setpoint_y;
+    lhs.state_y == rhs.state_y;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -140,12 +128,12 @@ struct MD5Sum< ::terserah::image_process_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "0f69305b82043f59043d1abfae232202";
+    return "745e31449ef6920014e1fbc87f70d5cd";
   }
 
   static const char* value(const ::terserah::image_process_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x0f69305b82043f59ULL;
-  static const uint64_t static_value2 = 0x043d1abfae232202ULL;
+  static const uint64_t static_value1 = 0x745e31449ef69200ULL;
+  static const uint64_t static_value2 = 0x14e1fbc87f70d5cdULL;
 };
 
 template<class ContainerAllocator>
@@ -166,8 +154,6 @@ struct Definition< ::terserah::image_process_<ContainerAllocator> >
   {
     return "int16 state_x\n"
 "int16 state_y\n"
-"int16 setpoint_x\n"
-"int16 setpoint_y\n"
 ;
   }
 
@@ -188,8 +174,6 @@ namespace serialization
     {
       stream.next(m.state_x);
       stream.next(m.state_y);
-      stream.next(m.setpoint_x);
-      stream.next(m.setpoint_y);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -212,10 +196,6 @@ struct Printer< ::terserah::image_process_<ContainerAllocator> >
     Printer<int16_t>::stream(s, indent + "  ", v.state_x);
     s << indent << "state_y: ";
     Printer<int16_t>::stream(s, indent + "  ", v.state_y);
-    s << indent << "setpoint_x: ";
-    Printer<int16_t>::stream(s, indent + "  ", v.setpoint_x);
-    s << indent << "setpoint_y: ";
-    Printer<int16_t>::stream(s, indent + "  ", v.setpoint_y);
   }
 };
 

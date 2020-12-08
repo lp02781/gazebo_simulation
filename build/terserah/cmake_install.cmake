@@ -38,7 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/terserah/msg" TYPE FILE FILES "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/terserah/msg" TYPE FILE FILES
+    "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg"
+    "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

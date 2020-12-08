@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg"
+messages_str = "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg;/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg"
 services_str = ""
 pkg_name = "terserah"
 dependencies_str = "mavros_msgs;std_msgs;sensor_msgs"

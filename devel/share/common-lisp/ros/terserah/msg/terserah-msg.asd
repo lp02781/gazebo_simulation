@@ -6,4 +6,6 @@
   :components ((:file "_package")
     (:file "image_process" :depends-on ("_package_image_process"))
     (:file "_package_image_process" :depends-on ("_package"))
+    (:file "pid_process" :depends-on ("_package_pid_process"))
+    (:file "_package_pid_process" :depends-on ("_package"))
   ))

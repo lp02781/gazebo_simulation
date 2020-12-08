@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/terserah_generate_messages_cpp"
   "/home/mfikih15/gazebo_simulation/devel/include/terserah/image_process.h"
+  "/home/mfikih15/gazebo_simulation/devel/include/terserah/pid_process.h"
 )
 
 # Per-language clean rules from dependency scanning.

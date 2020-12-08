@@ -23,6 +23,10 @@ using namespace std;
 
 //#############################################################################################  MAIN VARIABLE  ###############
 
+float kp = 1.5;//1.5
+float ki = 1;//1
+float kd = 0.5;//0.5
+
 int number_camera = 0;
 int width = 580;
 int height = 300;

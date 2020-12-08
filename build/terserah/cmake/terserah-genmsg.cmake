@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "terserah: 1 messages, 0 services")
+message(STATUS "terserah: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iterserah:/home/mfikih15/gazebo_simulation/src/terserah/msg;-Imavros_msgs:/opt/ros/melodic/share/mavros_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Igeographic_msgs:/opt/ros/melodic/share/geographic_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Iuuid_msgs:/opt/ros/melodic/share/uuid_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_terserah_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "terserah" "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg" ""
 )
 
+get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg" NAME_WE)
+add_custom_target(_terserah_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "terserah" "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -30,6 +35,12 @@ add_custom_target(_terserah_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(terserah
   "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/terserah
+)
+_generate_msg_cpp(terserah
+  "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/terserah
@@ -51,6 +62,8 @@ add_dependencies(terserah_generate_messages terserah_generate_messages_cpp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg" NAME_WE)
 add_dependencies(terserah_generate_messages_cpp _terserah_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg" NAME_WE)
+add_dependencies(terserah_generate_messages_cpp _terserah_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(terserah_gencpp)
@@ -63,6 +76,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS terserah_generate_messages_cpp)
 ### Generating Messages
 _generate_msg_eus(terserah
   "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/terserah
+)
+_generate_msg_eus(terserah
+  "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/terserah
@@ -84,6 +103,8 @@ add_dependencies(terserah_generate_messages terserah_generate_messages_eus)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg" NAME_WE)
 add_dependencies(terserah_generate_messages_eus _terserah_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg" NAME_WE)
+add_dependencies(terserah_generate_messages_eus _terserah_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(terserah_geneus)
@@ -96,6 +117,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS terserah_generate_messages_eus)
 ### Generating Messages
 _generate_msg_lisp(terserah
   "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/terserah
+)
+_generate_msg_lisp(terserah
+  "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/terserah
@@ -117,6 +144,8 @@ add_dependencies(terserah_generate_messages terserah_generate_messages_lisp)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg" NAME_WE)
 add_dependencies(terserah_generate_messages_lisp _terserah_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg" NAME_WE)
+add_dependencies(terserah_generate_messages_lisp _terserah_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(terserah_genlisp)
@@ -129,6 +158,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS terserah_generate_messages_lisp)
 ### Generating Messages
 _generate_msg_nodejs(terserah
   "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/terserah
+)
+_generate_msg_nodejs(terserah
+  "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/terserah
@@ -150,6 +185,8 @@ add_dependencies(terserah_generate_messages terserah_generate_messages_nodejs)
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg" NAME_WE)
 add_dependencies(terserah_generate_messages_nodejs _terserah_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg" NAME_WE)
+add_dependencies(terserah_generate_messages_nodejs _terserah_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(terserah_gennodejs)
@@ -162,6 +199,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS terserah_generate_messages_nodejs)
 ### Generating Messages
 _generate_msg_py(terserah
   "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/terserah
+)
+_generate_msg_py(terserah
+  "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/terserah
@@ -182,6 +225,8 @@ add_dependencies(terserah_generate_messages terserah_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/image_process.msg" NAME_WE)
+add_dependencies(terserah_generate_messages_py _terserah_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/mfikih15/gazebo_simulation/src/terserah/msg/pid_process.msg" NAME_WE)
 add_dependencies(terserah_generate_messages_py _terserah_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
