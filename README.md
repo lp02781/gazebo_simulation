@@ -87,11 +87,11 @@ open terminal 3
 	$ roslaunch terserah quad_complete.launch
 
 Command
-- p takeoff [0 0 5] //x y z
-- o landing 
-- w pos	[3 0 5]
-- a pos	[0 -3 5]
-- s pos	[-3 0 5]
-- d pos	[3 0 5]
-- l manual/ break auto [0 0 5]
-- k auto	-> follow read object as if there's camera underneath drone
+- p 	takeoff [0 0 5] //x y z
+- o 	landing 
+- w 	pos	[3 0 5]
+- a 	pos	[0 -3 5]
+- s 	pos	[-3 0 5]
+- d 	pos	[3 0 5]
+- l 	manual/ break auto [0 0 5]
+- k 	auto	-> follow read object as if there's camera underneath drone
