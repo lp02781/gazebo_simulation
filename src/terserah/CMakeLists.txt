@@ -163,24 +163,24 @@ include_directories(
 #############
 ## Install ##
 #############
-add_executable(image_front src/image_front.cpp )
+add_executable(image_front src/main/image_front.cpp )
 target_link_libraries(image_front
 ${catkin_LIBRARIES}
 ${OpenCV_LIBRARIES}
 )
 
-add_executable(simple_red src/simple_red.cpp )
+add_executable(simple_red src/main/simple_red.cpp )
 target_link_libraries(simple_red
 ${catkin_LIBRARIES}
 ${OpenCV_LIBRARIES}
 )
 
-add_executable(remote_monitor src/remote_monitor.cpp )
+add_executable(remote_monitor src/main/remote_monitor.cpp )
 target_link_libraries(remote_monitor
 ${catkin_LIBRARIES}
 )
 
-add_executable(quad src/quad.cpp )
+add_executable(quad src/vehicle/quad.cpp )
 target_link_libraries(quad
 ${catkin_LIBRARIES}
 )

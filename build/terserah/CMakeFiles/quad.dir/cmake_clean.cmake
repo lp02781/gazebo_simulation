@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/quad.dir/src/quad.cpp.o"
+  "CMakeFiles/quad.dir/src/vehicle/quad.cpp.o"
   "/home/mfikih15/gazebo_simulation/devel/lib/terserah/quad.pdb"
   "/home/mfikih15/gazebo_simulation/devel/lib/terserah/quad"
 )

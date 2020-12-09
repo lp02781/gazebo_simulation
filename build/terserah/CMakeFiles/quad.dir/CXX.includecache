@@ -336,8 +336,8 @@ rapidjson/stringbuffer.h
 rapidjson/reader.h
 /home/mfikih15/gazebo_simulation/src/terserah/include/terserah/rapidjson/reader.h
 
-/home/mfikih15/gazebo_simulation/src/terserah/src/quad.cpp
-../include/terserah/terserah.hpp
+/home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/quad.cpp
+../../include/terserah/terserah.hpp
 /home/mfikih15/gazebo_simulation/src/terserah/include/terserah/terserah.hpp
 ros/ros.h
 -
@@ -366,15 +366,15 @@ mavros_msgs/CommandBool.h
 mavros_msgs/State.h
 -
 terserah/image_process.h
-/home/mfikih15/gazebo_simulation/src/terserah/src/terserah/image_process.h
+/home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/terserah/image_process.h
 terserah/pid_process.h
-/home/mfikih15/gazebo_simulation/src/terserah/src/terserah/pid_process.h
+/home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/terserah/pid_process.h
 pid/plant_msg.h
-/home/mfikih15/gazebo_simulation/src/terserah/src/pid/plant_msg.h
+/home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/pid/plant_msg.h
 pid/controller_msg.h
-/home/mfikih15/gazebo_simulation/src/terserah/src/pid/controller_msg.h
+/home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/pid/controller_msg.h
 pid/pid_const_msg.h
-/home/mfikih15/gazebo_simulation/src/terserah/src/pid/pid_const_msg.h
+/home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/pid/pid_const_msg.h
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string

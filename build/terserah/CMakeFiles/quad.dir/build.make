@@ -57,38 +57,38 @@ include terserah/CMakeFiles/quad.dir/progress.make
 # Include the compile flags for this target's objects.
 include terserah/CMakeFiles/quad.dir/flags.make
 
-terserah/CMakeFiles/quad.dir/src/quad.cpp.o: terserah/CMakeFiles/quad.dir/flags.make
-terserah/CMakeFiles/quad.dir/src/quad.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/quad.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/quad.dir/src/quad.cpp.o"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quad.dir/src/quad.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/quad.cpp
+terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o: terserah/CMakeFiles/quad.dir/flags.make
+terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o: /home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/quad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mfikih15/gazebo_simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quad.dir/src/vehicle/quad.cpp.o -c /home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/quad.cpp
 
-terserah/CMakeFiles/quad.dir/src/quad.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quad.dir/src/quad.cpp.i"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/quad.cpp > CMakeFiles/quad.dir/src/quad.cpp.i
+terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quad.dir/src/vehicle/quad.cpp.i"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/quad.cpp > CMakeFiles/quad.dir/src/vehicle/quad.cpp.i
 
-terserah/CMakeFiles/quad.dir/src/quad.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quad.dir/src/quad.cpp.s"
-	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/quad.cpp -o CMakeFiles/quad.dir/src/quad.cpp.s
+terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quad.dir/src/vehicle/quad.cpp.s"
+	cd /home/mfikih15/gazebo_simulation/build/terserah && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mfikih15/gazebo_simulation/src/terserah/src/vehicle/quad.cpp -o CMakeFiles/quad.dir/src/vehicle/quad.cpp.s
 
-terserah/CMakeFiles/quad.dir/src/quad.cpp.o.requires:
+terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.requires:
 
-.PHONY : terserah/CMakeFiles/quad.dir/src/quad.cpp.o.requires
+.PHONY : terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.requires
 
-terserah/CMakeFiles/quad.dir/src/quad.cpp.o.provides: terserah/CMakeFiles/quad.dir/src/quad.cpp.o.requires
-	$(MAKE) -f terserah/CMakeFiles/quad.dir/build.make terserah/CMakeFiles/quad.dir/src/quad.cpp.o.provides.build
-.PHONY : terserah/CMakeFiles/quad.dir/src/quad.cpp.o.provides
+terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.provides: terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.requires
+	$(MAKE) -f terserah/CMakeFiles/quad.dir/build.make terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.provides.build
+.PHONY : terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.provides
 
-terserah/CMakeFiles/quad.dir/src/quad.cpp.o.provides.build: terserah/CMakeFiles/quad.dir/src/quad.cpp.o
+terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.provides.build: terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o
 
 
 # Object files for target quad
 quad_OBJECTS = \
-"CMakeFiles/quad.dir/src/quad.cpp.o"
+"CMakeFiles/quad.dir/src/vehicle/quad.cpp.o"
 
 # External object files for target quad
 quad_EXTERNAL_OBJECTS =
 
-/home/mfikih15/gazebo_simulation/devel/lib/terserah/quad: terserah/CMakeFiles/quad.dir/src/quad.cpp.o
+/home/mfikih15/gazebo_simulation/devel/lib/terserah/quad: terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/quad: terserah/CMakeFiles/quad.dir/build.make
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/quad: /opt/ros/melodic/lib/libcv_bridge.so
 /home/mfikih15/gazebo_simulation/devel/lib/terserah/quad: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
@@ -131,7 +131,7 @@ terserah/CMakeFiles/quad.dir/build: /home/mfikih15/gazebo_simulation/devel/lib/t
 
 .PHONY : terserah/CMakeFiles/quad.dir/build
 
-terserah/CMakeFiles/quad.dir/requires: terserah/CMakeFiles/quad.dir/src/quad.cpp.o.requires
+terserah/CMakeFiles/quad.dir/requires: terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.o.requires
 
 .PHONY : terserah/CMakeFiles/quad.dir/requires
 

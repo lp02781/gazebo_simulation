@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mfikih15/gazebo_simulation/src/terserah/src/simple_red.cpp" "/home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/simple_red.dir/src/simple_red.cpp.o"
+  "/home/mfikih15/gazebo_simulation/src/terserah/src/main/simple_red.cpp" "/home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/simple_red.dir/src/main/simple_red.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

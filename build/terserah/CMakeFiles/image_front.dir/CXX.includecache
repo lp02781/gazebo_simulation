@@ -256,8 +256,8 @@ rapidjson/stringbuffer.h
 rapidjson/reader.h
 /home/mfikih15/gazebo_simulation/src/terserah/include/terserah/rapidjson/reader.h
 
-/home/mfikih15/gazebo_simulation/src/terserah/src/image_front.cpp
-../include/terserah/terserah.hpp
+/home/mfikih15/gazebo_simulation/src/terserah/src/main/image_front.cpp
+../../include/terserah/terserah.hpp
 /home/mfikih15/gazebo_simulation/src/terserah/include/terserah/terserah.hpp
 ros/ros.h
 -
