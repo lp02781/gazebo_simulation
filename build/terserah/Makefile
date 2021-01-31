@@ -213,6 +213,21 @@ simple_red/fast:
 .PHONY : simple_red/fast
 
 # Convenience name for target.
+terserah/CMakeFiles/rover.dir/rule:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 terserah/CMakeFiles/rover.dir/rule
+.PHONY : terserah/CMakeFiles/rover.dir/rule
+
+# Convenience name for target.
+rover: terserah/CMakeFiles/rover.dir/rule
+
+.PHONY : rover
+
+# fast build rule for target.
+rover/fast:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/rover.dir/build.make terserah/CMakeFiles/rover.dir/build
+.PHONY : rover/fast
+
+# Convenience name for target.
 terserah/CMakeFiles/image_front.dir/rule:
 	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f CMakeFiles/Makefile2 terserah/CMakeFiles/image_front.dir/rule
 .PHONY : terserah/CMakeFiles/image_front.dir/rule
@@ -905,6 +920,33 @@ src/vehicle/quad.cpp.s:
 	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/quad.dir/build.make terserah/CMakeFiles/quad.dir/src/vehicle/quad.cpp.s
 .PHONY : src/vehicle/quad.cpp.s
 
+src/vehicle/rover.o: src/vehicle/rover.cpp.o
+
+.PHONY : src/vehicle/rover.o
+
+# target to build an object file
+src/vehicle/rover.cpp.o:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/rover.dir/build.make terserah/CMakeFiles/rover.dir/src/vehicle/rover.cpp.o
+.PHONY : src/vehicle/rover.cpp.o
+
+src/vehicle/rover.i: src/vehicle/rover.cpp.i
+
+.PHONY : src/vehicle/rover.i
+
+# target to preprocess a source file
+src/vehicle/rover.cpp.i:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/rover.dir/build.make terserah/CMakeFiles/rover.dir/src/vehicle/rover.cpp.i
+.PHONY : src/vehicle/rover.cpp.i
+
+src/vehicle/rover.s: src/vehicle/rover.cpp.s
+
+.PHONY : src/vehicle/rover.s
+
+# target to generate assembly for a file
+src/vehicle/rover.cpp.s:
+	cd /home/mfikih15/gazebo_simulation/build && $(MAKE) -f terserah/CMakeFiles/rover.dir/build.make terserah/CMakeFiles/rover.dir/src/vehicle/rover.cpp.s
+.PHONY : src/vehicle/rover.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -918,6 +960,7 @@ help:
 	@echo "... quad"
 	@echo "... remote_monitor"
 	@echo "... simple_red"
+	@echo "... rover"
 	@echo "... image_front"
 	@echo "... mavros_msgs_generate_messages_nodejs"
 	@echo "... terserah_generate_messages_lisp"
@@ -972,6 +1015,9 @@ help:
 	@echo "... src/vehicle/quad.o"
 	@echo "... src/vehicle/quad.i"
 	@echo "... src/vehicle/quad.s"
+	@echo "... src/vehicle/rover.o"
+	@echo "... src/vehicle/rover.i"
+	@echo "... src/vehicle/rover.s"
 .PHONY : help
 
 

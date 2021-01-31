@@ -1,0 +1,18 @@
+<launch>
+	<arg name="kpx" default="0" />
+	<arg name="kix" default="0" />
+	<arg name="kdx" default="0" />
+	<arg name="upper_limit_x" default="10" />
+	<arg name="lower_limit_x" default="-10" />
+	<arg name="anti_windup_x" default="0.001" />
+	
+	<arg name="topic_x_in" default="terserah/pid_x_in" />
+	<arg name="topic_x_out" default="terserah/pid_x_out" />
+	
+	<node name="pid_x" pkg="pid" type="controller_adaptive" args="$(arg kpx) $(arg kix) $(arg kdx) 200 -tfp $(arg topic_x_in) -tfc terserah/pid_x_out -ul $(arg upper_limit_x) -ll $(arg lower_limit_x) -aw $(arg anti_windup_x)" />
+	
+	<node name="image_front" pkg="terserah" output="screen" type="image_front" />
+	<node name="simple_red" pkg="terserah" output="screen" type="simple_red"/>
+	<node name="remote_monitor" pkg="terserah" output="screen" type="remote_monitor"/>
+	<node name="rover" pkg="terserah" output="screen" type="rover"/>
+</launch>

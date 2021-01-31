@@ -79,6 +79,7 @@
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/quad.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/remote_monitor.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/simple_red.dir
+/home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/rover.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/image_front.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir
 /home/mfikih15/gazebo_simulation/build/terserah/CMakeFiles/terserah_generate_messages_lisp.dir

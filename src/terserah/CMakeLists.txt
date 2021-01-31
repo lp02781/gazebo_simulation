@@ -185,6 +185,11 @@ target_link_libraries(quad
 ${catkin_LIBRARIES}
 )
 
+add_executable(rover src/vehicle/rover.cpp )
+target_link_libraries(rover
+${catkin_LIBRARIES}
+)
+
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 

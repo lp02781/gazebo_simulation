@@ -714,6 +714,19 @@ simple_red/fast:
 .PHONY : simple_red/fast
 
 #=============================================================================
+# Target rules for targets named rover
+
+# Build rule for target.
+rover: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rover
+.PHONY : rover
+
+# fast build rule for target.
+rover/fast:
+	$(MAKE) -f terserah/CMakeFiles/rover.dir/build.make terserah/CMakeFiles/rover.dir/build
+.PHONY : rover/fast
+
+#=============================================================================
 # Target rules for targets named image_front
 
 # Build rule for target.
@@ -1275,6 +1288,7 @@ help:
 	@echo "... quad"
 	@echo "... remote_monitor"
 	@echo "... simple_red"
+	@echo "... rover"
 	@echo "... image_front"
 	@echo "... mavros_msgs_generate_messages_nodejs"
 	@echo "... terserah_generate_messages_lisp"

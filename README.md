@@ -69,19 +69,17 @@ tambahkan di baris paling bawah
 
 restart terminal
 
-
-
-How to use it
+How to use quadcopter
 
 open terminal 1
 
+	$ cd PX4-Autopilot
 	$ make px4_sitl gazebo
 
 open terminal 2
 
 	$ roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
 	
-Play with quad copter
 open terminal 3
 
 	$ roslaunch terserah quad_complete.launch
