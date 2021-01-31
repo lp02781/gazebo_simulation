@@ -47,7 +47,7 @@ Mavros Installation
 
 Gazebo PX4 Installation
 	
-	$ https://github.com/PX4/PX4-Autopilot.git
+	$ git clone https://github.com/PX4/PX4-Autopilot.git
 	$ cd PX4-Autopilot
 	$ make px4_sitl gazebo
 	
