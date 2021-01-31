@@ -40,16 +40,20 @@ reff https://docs.opencv.org/3.4/d7/d9f/tutorial_linux_install.html
 
 Mavros Installation
 	
-	$ sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
+	$ sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
 	$ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 	$ sudo chmod +x ./install_geographiclib_datasets.sh
 	$ sudo ./install_geographiclib_datasets.sh
+
+reff https://github.com/mavlink/mavros/blob/master/mavros/README.md
 
 Gazebo PX4 Installation
 	
 	$ git clone https://github.com/PX4/PX4-Autopilot.git
 	$ cd PX4-Autopilot
 	$ make px4_sitl gazebo
+	
+reff https://docs.px4.io/master/en/simulation/gazebo.html
 	
 QtCreator 5 Installation 
 	
